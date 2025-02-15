@@ -7,18 +7,18 @@ from email import message_from_bytes  # For parsing email messages
 
 def extract_text_from_multipart(data):
     """
-    Extracts plain text content from a multipart email message.
+    Extracts plain text content from a file.
     """
     msg = message_from_bytes(data)
     text_content = ''
 
     if msg.is_multipart():
-        # Iterate through all parts of the email message
+        # Iterate through all parts of the file
         for part in msg.walk():
             if part.get_content_type() == 'text/plain':  # Check if the content is plain text
                 text_content += part.get_payload(decode=True).decode('utf-8') + '\n'
     else:
-        # If the message is not multipart, extract plain text directly
+        # If the file is not multipart, extract plain text directly
         if msg.get_content_type() == 'text/plain':
             text_content = msg.get_payload(decode=True).decode('utf-8')
 
