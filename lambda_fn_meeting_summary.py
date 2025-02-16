@@ -76,6 +76,7 @@ def save_summary_to_s3_bucket(summary, s3_bucket, s3_key):
         print(f"Summary saved to S3 bucket: {s3_bucket}/{s3_key}")
     except Exception as e:
         print(f"Error saving the summary to S3 bucket: {e}")
+        print("")
 
 
 def lambda_handler(event, context):
