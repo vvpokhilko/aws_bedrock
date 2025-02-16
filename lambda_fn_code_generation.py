@@ -54,6 +54,7 @@ def save_code_to_s3_bucket(code, s3_bucket, s3_key):
         print(f"Code saved to S3 bucket: {s3_bucket}/{s3_key}")
     except Exception as e:
         print(f"Error saving code to S3 bucket: {e}")
+        print("")
 
 
 def lambda_handler(event, context):
@@ -83,4 +84,5 @@ def lambda_handler(event, context):
     return {
         'statusCode': 200,  # HTTP success status
         'body': json.dumps('Code generation completed')  # Response message
+        # 'body': json.dumps(generated_code)
     }
