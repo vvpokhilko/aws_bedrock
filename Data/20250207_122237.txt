@@ -1,0 +1,13 @@
+Here are the main points made by Andrej Karpathy in the Tesla strategy meeting:
+
+- The AI/FSD team has been refining the neural networks and collecting more real-world data to improve edge cases. 
+
+- FSD Beta version 11 will soon be ready for a wider release. 
+
+- The team is integrating more feedback from the safety team to ensure FSD is not just technologically advanced but also safe.
+
+- Version 11 comes with a complete UI overhaul, more customization options, and significant improvements to core Autopilot functions. 
+
+- More entertainment options have been added to the Tesla Theater.
+
+- The software experience needs to match Tesla's hardware prowess.
